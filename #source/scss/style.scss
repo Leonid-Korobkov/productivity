@@ -16,12 +16,38 @@ img{vertical-align:top;max-width: 100%;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 /*--------------------*/
 
-@import "components/header.scss";
-@import "components/footer.scss";
 @import "media.scss";
 @import "mixin.scss";
 @import "variables.scss";
 
+
+// components import
+@import "components/header.scss";
+@import "components/footer.scss";
+@import "components/1-hero-image.scss";
+@import "components/2-customers.scss";
+@import "components/3-plan-and-manage.scss";
+@import "components/4-features.scss";
+@import "components/5-stats.scss";
+@import "components/6-blog.scss";
+@import "components/7-quotes.scss";
+@import "components/8-faq.scss";
+@import "components/9-get-started.scss";
+@import "components/10-newsletter.scss";
+
 body{
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	@include roboto
+}
+
+.section-outer {
+	border-bottom: 1px solid $color-divider;
+}
+.section-inner {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: $padding-vertical 0px $padding-vertical;
+	&--wide {
+		max-width: 1200px;
+	}
 }

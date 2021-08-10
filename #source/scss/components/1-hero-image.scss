@@ -1,0 +1,12 @@
+.section-outer {
+}
+.section-hero-image {
+    background: rgb(244,247,255);
+    background: -moz-linear-gradient(180deg, rgba(244,247,255,1) 0%, rgba(226,234,255,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(244,247,255,1) 0%, rgba(226,234,255,1) 100%);
+    background: linear-gradient(180deg, rgba(244,247,255,1) 0%, rgba(226,234,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f4f7ff",endColorstr="#e2eaff",GradientType=1);
+    // background: #f4f7ff;
+}
+.section-inner {
+}
