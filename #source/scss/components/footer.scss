@@ -6,3 +6,12 @@
         padding: $padding-vertical-sm 0px $padding-vertical-sm;
     }
 }
+.copyright {
+    color: #AEB8D0;
+    @include quicksand;
+    margin-top: 25px;
+    letter-spacing: 0.05em;
+    font-size: $fz-sm;
+    font-weight: $fw-medium;
+    margin-left: $base * 26.5;
+}

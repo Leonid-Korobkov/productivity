@@ -37,7 +37,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 
 body{
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-	@include roboto
+	@include roboto;
+	font-size: 14px;
 }
 
 .section-outer {
@@ -51,3 +52,26 @@ body{
 		max-width: 1200px;
 	}
 }
+.btn {
+	@include quicksand;
+	font-weight: $fw-bold;
+	font-size: $fz-sm;
+	margin: 0;
+	padding: $base * 3 $base * 4;
+	border: 0;
+	border-radius: 2px;
+	background: none;
+	color: #3a79ff;
+	transition: $transiton;
+
+	&--primary {
+		background: #d2e1ff;
+		color: #3a79ff;
+		margin-left: $base * 9;
+
+		&:hover {
+			background: #bbd0ff
+		}
+	}
+}
+
