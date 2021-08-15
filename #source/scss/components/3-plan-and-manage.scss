@@ -1,7 +1,45 @@
-.section-outer {
-}
 .section-plan-and-manage {
     background: #f5f8ff;
-}
-.section-inner {
+    position: relative;
+    overflow: hidden;
+    .aside-image {
+        position: absolute;
+        top: 120px;
+        left: 50%;
+        transform: translateX(-150px);
+        max-width: 853px;
+    }
+    .section-inner {
+        padding: 205px 0;
+    }
+    &__content {
+        h5 {
+            margin-bottom: $base * 7;
+        }
+        h3 {
+            font-weight: $fw-light;
+            margin-bottom: $base * 7;
+
+            span {
+                font-weight: $fw-medium; 
+            }
+        }
+
+        .text {
+            line-height: 29px;
+            letter-spacing: 0.03em;
+            max-width: 42%;
+            margin-bottom: $base * 12;
+        }
+        .btn--secondary {
+            background: #4c85ff url(../img/icons/Polygon.svg) top 17px right 23px no-repeat;
+            padding: 13px 37px 13px 25px;
+            &:hover {
+                background: #2d61cf url(../img/icons/Polygon.svg) top 17px right 10px no-repeat;
+            }
+        }
+        .btn {
+            margin-left: 0;
+        }
+    }
 }

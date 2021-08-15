@@ -92,8 +92,42 @@ body{
 		margin-left: $base * 9;
 
 		&:hover {
-			background: #bbd0ff
+			background: #bbd0ff;
 		}
+	}
+
+	&--secondary {
+		background: #4c85ff;
+		color: #fff;
+		margin-left: $base * 9;
+		padding: 13px 25px;
+
+		&:hover {
+			background: #2d61cf;
+		}
+	}
+
+	&--no-bg {
+		color: #adb4d2;
+		margin-left: $base * 9;
+		border: 1px solid #d1d1E4;
+
+		&:hover {
+			background: #adb4d2;
+			color: #F6F8FF;
+		}
+	}
+}
+.btn-group {
+	display: inline-flex;
+	
+	.btn:nth-child(1) {
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+	.btn:nth-child(2) {
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
 	}
 }
 h1, h2, h3, h4, h5, h6 {
