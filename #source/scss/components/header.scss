@@ -65,6 +65,7 @@
 
             &-link {
                 padding: 10px;
+                transition: $transiton;
                 
                 &--active {
                 }
@@ -78,15 +79,9 @@
                 svg {
                     transition: $transiton;
                 }
-                &:hover svg {
-                    transform: scale(1.2);
-                }
             }
 		}
 
-}
-
-.btn {
 }
 
 
