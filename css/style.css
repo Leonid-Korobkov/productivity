@@ -157,7 +157,7 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   background-position: 50% 50%;
   text-align: center;
-  background: url(../../../img/hero-image/1-slider-bg.png) center bottom/cover no-repeat; }
+  background: url(../img/hero-image/1-slider-bg.png) center bottom/cover no-repeat; }
   .slider-hero-image__item-content h2 {
     font-weight: 300; }
     .slider-hero-image__item-content h2 span {
