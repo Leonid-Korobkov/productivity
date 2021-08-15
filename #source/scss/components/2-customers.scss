@@ -1,8 +1,21 @@
-.section-outer {
-}
 .section-customers {
     .section-inner {
         padding: $padding-vertical-sm 0px $padding-vertical-sm;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        a {
+            filter: grayscale(100%);
+            opacity: 0.3;
+            transition: $transiton;
+            display: inline-block;
+
+            &:hover {
+                filter: none;
+                opacity: 1;
+            }
+        }
     }
 }
 
