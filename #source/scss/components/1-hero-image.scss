@@ -6,12 +6,12 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f4f7ff",endColorstr="#f1f5ff",GradientType=1);
     // background: #f4f7ff; 
     position: relative;
-}
-.dots {
-    position: absolute;
-    bottom: 28px;
-    left: 50%;
-    transform: translateX(-50%);
+    .dots {
+        position: absolute;
+        bottom: 28px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 .slider-hero-image {
     &__item {

@@ -46,6 +46,7 @@ body{
 	padding: 0;
 	list-style: none;
 	display: flex;
+	justify-content: center;
 
 	&__item  {
 		width: $base * 3;
@@ -155,13 +156,13 @@ h3 {
 h4 {
 	font-size: 24px;
 	margin-bottom: $base * 20;
+	font-weight: $fw-medium;
 }
 h5 {
 	@include roboto;
 	font-size: 10px;
 	margin-bottom: $base * 4;
 }
-
 .ta-c {
 	text-align: center;
 }
