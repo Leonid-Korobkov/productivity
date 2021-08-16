@@ -1,0 +1,78 @@
+.section-features {
+    background: url(../img/features/bg-clouds.svg) center center / contain no-repeat;
+    h4 {
+        font-weight: $fw-medium;
+    }
+}
+.features-list {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 105px;
+
+		&__item {
+            flex-basis: 20%;
+            position: relative;
+            &:not(:first-child):before {
+                content: "";
+                top: 55%;
+                right: 108%;
+                background: #dae4fe;
+                height: 1px;
+                width: 28px;
+                position: absolute;
+            }
+
+            &-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto $base * 8;
+                width: $base * 17;
+                height: $base * 17;
+                border-radius: 100%;
+                background: #f1f5ff;
+            }
+
+            &-title {
+                font-weight: $fw-bold;
+                font-size: $fz-md;
+                color: #4074f8;
+                margin-bottom: 28px;
+            }
+    
+            &-text {
+                line-height: 22px;
+            }
+		}	
+}
+.btns {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    .btn {
+        margin-left: 0;
+        display: inline-block;
+    }
+}
+.or-block {
+    display: inline-flex;
+    align-items: center;
+    font-size: $fz-sm;
+    font-weight: $fw-medium;
+    margin: 0 $base * 4;
+
+    &::before, 
+    &::after {
+        content: "";
+        height: 1px;
+        width: 15px;
+        background: #dae4fe;
+    }
+    &::before {
+        margin-right: $base * 4;
+    }
+    &::after {
+        margin-left: $base * 4;
+    }
+}
