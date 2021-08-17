@@ -76,6 +76,7 @@ body{
 	}
 }
 .btn {
+	cursor: pointer;
 	@include quicksand;
 	display: inline-block;
 	white-space: nowrap;
@@ -83,7 +84,7 @@ body{
 	font-size: $fz-sm;
 	margin: 0;
 	padding: $base * 3 $base * 4;
-	border: 0;
+	border: 1px solid transparent;
 	border-radius: 2px;
 	background: none;
 	color: #3a79ff;
@@ -154,6 +155,39 @@ body{
 		&:hover {
 			background: #cbd2e0;
 		}
+	}
+	&--size-lg {
+		padding: $base * 5 $base * 15;
+	}
+}
+input {
+	padding: $base * 5 $base * 6;
+	width: 280px;
+	background: #efeff7;
+	border-radius: 5px;
+	box-sizing: border-box;
+	border: 1px solid transparent;
+	&:focus {
+		border: 1px solid #4d6ce1;
+	}
+	@include quicksand;
+	font-weight: $fw-bold;
+	font-size: 13px;
+	color: #7a85ad;
+	&:placeholder-shown {
+		color: #7a85ad;
+	}
+	::-webkit-input-placeholder { /* WebKit browsers */
+		color: #7a85ad;
+	}
+	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+		color: #7a85ad;
+	}
+	::-moz-placeholder { /* Mozilla Firefox 19+ */
+		color: #7a85ad;
+	}
+	:-ms-input-placeholder { /* Internet Explorer 10+ */
+		color: #7a85ad;
 	}
 }
 .btn-group {

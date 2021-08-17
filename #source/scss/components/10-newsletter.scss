@@ -1,7 +1,33 @@
-.section-outer {
-}
 .section-newsletter {
+    .section-inner {
+        display: flex;
+        justify-content: space-between;
+    }
     background: #fcfdff;
-}
-.section-inner {
+    &-left {
+        flex-basis: 35%;
+        &-title {
+            @include quicksand;
+            font-weight: $fw-bold;
+            font-size: $fz-lg;
+            color: #3d4f9f;
+            margin-bottom: 18px;
+        }
+        &-text{
+            line-height: 27px;
+            letter-spacing: 0.03em;
+            color: #8D96BD;
+        }
+    }
+    &-right {
+        flex-basis: 60%;
+        display: flex;
+        justify-content: flex-end;
+        .btn {
+            background: #4d6ce1;
+            box-shadow: 0px 5px 15px rgba(116, 104, 255, 0.4);
+            border-radius: 5px;
+            margin-left: 14px;
+        }
+    }
 }
