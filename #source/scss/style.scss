@@ -174,21 +174,18 @@ input {
 	font-weight: $fw-bold;
 	font-size: 13px;
 	color: #7a85ad;
-	&:placeholder-shown {
-		color: #7a85ad;
-	}
-	::-webkit-input-placeholder { /* WebKit browsers */
-		color: #7a85ad;
-	}
-	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-		color: #7a85ad;
-	}
-	::-moz-placeholder { /* Mozilla Firefox 19+ */
-		color: #7a85ad;
-	}
-	:-ms-input-placeholder { /* Internet Explorer 10+ */
-		color: #7a85ad;
-	}
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+	color: #7a85ad;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color: #7a85ad;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+	color: #7a85ad;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+	color: #7a85ad;
 }
 .btn-group {
 	display: inline-flex;

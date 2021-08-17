@@ -765,24 +765,22 @@ input {
   color: #7a85ad; }
   input:focus {
     border: 1px solid #4d6ce1; }
-  input:-moz-placeholder-shown {
-    color: #7a85ad; }
-  input:-ms-input-placeholder {
-    color: #7a85ad; }
-  input:placeholder-shown {
-    color: #7a85ad; }
-  input ::-webkit-input-placeholder {
-    /* WebKit browsers */
-    color: #7a85ad; }
-  input :-moz-placeholder {
-    /* Mozilla Firefox 4 to 18 */
-    color: #7a85ad; }
-  input ::-moz-placeholder {
-    /* Mozilla Firefox 19+ */
-    color: #7a85ad; }
-  input :-ms-input-placeholder {
-    /* Internet Explorer 10+ */
-    color: #7a85ad; }
+
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #7a85ad; }
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #7a85ad; }
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #7a85ad; }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #7a85ad; }
 
 .btn-group {
   display: -webkit-inline-box;
