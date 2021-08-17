@@ -593,7 +593,22 @@ h1, h2, h3, h4, h5, h6 {
     display: flex; }
 
 .section-get-started {
-  background: #6888ff; }
+  background: #718ffb url(../img/get-started/clouds.svg) center center no-repeat;
+  text-align: center;
+  color: #fff; }
+  .section-get-started h2, .section-get-started h5 {
+    color: #fff; }
+  .section-get-started h2 {
+    font-weight: 300; }
+    .section-get-started h2 span {
+      font-weight: 500; }
+  .section-get-started .text {
+    margin: 0 auto 50px;
+    line-height: 29px;
+    letter-spacing: 0.03em;
+    max-width: 712px; }
+  .section-get-started .btn {
+    margin-left: 0; }
 
 .section-newsletter {
   background: #fcfdff; }
@@ -653,10 +668,16 @@ body {
   transition: all 0.2s ease; }
   .btn--primary {
     background: #d2e1ff;
-    color: #3a79ff;
     margin-left: 36px; }
     .btn--primary:hover {
       background: #bbd0ff; }
+    .btn--primary-inverted {
+      background: #fff;
+      color: #565f82;
+      -webkit-box-shadow: 0px 5px 15px #6480E8;
+              box-shadow: 0px 5px 15px #6480E8; }
+      .btn--primary-inverted:hover {
+        background: #d4d4d4; }
   .btn--danger {
     background: #ffd7d7;
     color: #d43f3f; }
@@ -666,7 +687,9 @@ body {
     background: #4c85ff;
     color: #fff;
     margin-left: 36px;
-    padding: 13px 25px; }
+    padding: 13px 25px;
+    -webkit-box-shadow: 0px 5px 15px rgba(188, 199, 255, 0.75);
+            box-shadow: 0px 5px 15px rgba(188, 199, 255, 0.75); }
     .btn--secondary:hover {
       background: #2d61cf; }
   .btn--no-bg {
@@ -675,7 +698,13 @@ body {
     border: 1px solid #d1d1E4; }
     .btn--no-bg:hover {
       background: #adb4d2;
-      color: #F6F8FF; }
+      color: #f6f8ff; }
+    .btn--no-bg-inverted {
+      color: #c7d3ff;
+      border: 1px solid #a0b4ff; }
+      .btn--no-bg-inverted:hover {
+        color: #fff;
+        background: #adb4d2; }
   .btn--grayscale {
     font-weight: 500;
     font-size: 13px;
