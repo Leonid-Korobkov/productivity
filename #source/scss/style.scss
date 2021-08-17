@@ -77,6 +77,8 @@ body{
 }
 .btn {
 	@include quicksand;
+	display: inline-block;
+	white-space: nowrap;
 	font-weight: $fw-bold;
 	font-size: $fz-sm;
 	margin: 0;
@@ -126,6 +128,16 @@ body{
 			color: #F6F8FF;
 		}
 	}
+	&--grayscale {
+		font-weight: $fw-medium;
+		font-size: 13px;
+		background: #e8ecf4;
+		color: #7382a3;
+
+		&:hover {
+			background: #cbd2e0;
+		}
+	}
 }
 .btn-group {
 	display: inline-flex;
@@ -163,6 +175,7 @@ h5 {
 	font-size: 10px;
 	margin-bottom: $base * 4;
 	letter-spacing: 0.1em;
+	text-transform: uppercase;
 }
 .ta-c {
 	text-align: center;

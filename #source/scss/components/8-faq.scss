@@ -1,0 +1,57 @@
+.faq-accordion {
+
+    &__item {
+        border-bottom: 1px solid #D8E3FE;
+
+        &-trigger {
+            display: flex;
+            padding: $base * 7;
+
+            &-icon {
+                cursor: pointer;
+                padding: 0 $base * 8;
+                transform: rotate(180deg);
+                .arrow{
+                    // stroke: #495274;
+                    stroke: #8e96b7;
+                }
+            }
+            &-text {
+                letter-spacing: 0.03em;
+                font-size: 15px;
+            }
+        }
+        &-content {
+            display: none;
+            padding: 0 $base * 4 53px $base * 32;
+
+            &-text {
+                flex-grow: 1;
+                line-height: 27px;
+                letter-spacing: 0.03em;
+                max-width: 400px;
+                margin-right: auto;
+            }
+            &-btn {
+                margin: auto 0;
+            }
+        }
+        &--active {
+            .faq-accordion__item-trigger {
+                color: #495274;
+                font-weight: $fw-bold;
+
+                .faq-accordion__item-trigger-icon {
+                    transform: rotate(0deg);
+
+                    .arrow {
+                        stroke: #495274;
+                    }
+                }
+            }
+            .faq-accordion__item-content {
+                display: flex;
+            }
+        }
+    }
+}
