@@ -85,7 +85,7 @@ body{
 	margin: 0;
 	padding: $base * 3 $base * 4;
 	border: 1px solid transparent;
-	border-radius: 2px;
+	border-radius: $base/2;
 	background: none;
 	color: #3a79ff;
 	transition: $transiton;
@@ -100,7 +100,7 @@ body{
 		&-inverted {
 			background: #fff;
 			color: #565f82;
-			box-shadow: 0px 5px 15px #6480E8;
+			box-shadow: 0px $base $base*4 #6480E8;
 
 			&:hover {
 				background: #d4d4d4;
@@ -120,8 +120,8 @@ body{
 		background: #4c85ff;
 		color: #fff;
 		margin-left: $base * 9;
-		padding: 13px 25px;
-		box-shadow: 0px 5px 15px rgba(188, 199, 255, 0.75);
+		padding: $base*3 $base*6;
+		box-shadow: 0px $base $base*4 rgba(188, 199, 255, 0.75);
 
 		&:hover {
 			background: #2d61cf;
@@ -162,9 +162,9 @@ body{
 }
 input {
 	padding: $base * 5 $base * 6;
-	width: 280px;
+	width: $base * 70;
 	background: #efeff7;
-	border-radius: 5px;
+	border-radius: $base;
 	box-sizing: border-box;
 	border: 1px solid transparent;
 	&:focus {

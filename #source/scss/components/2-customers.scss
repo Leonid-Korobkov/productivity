@@ -11,6 +11,10 @@
             transition: $transiton;
             display: inline-block;
 
+            img {
+                max-width: 117px;
+            }
+
             &:hover {
                 filter: none;
                 opacity: 1;

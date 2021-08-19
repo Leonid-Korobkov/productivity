@@ -1,5 +1,3 @@
-.section-outer {
-}
 .section-footer {
     border-bottom: none;
     .section-inner {
@@ -9,7 +7,7 @@
 .copyright {
     color: #AEB8D0;
     @include quicksand;
-    margin-top: 25px;
+    margin-top: $base*6;
     letter-spacing: 0.05em;
     font-size: $fz-sm;
     font-weight: $fw-medium;

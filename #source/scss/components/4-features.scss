@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-between;
     text-align: center;
-    margin-bottom: 105px;
+    margin-bottom: $base * 26;
 
 		&__item {
             flex-basis: 20%;
@@ -19,7 +19,7 @@
                 right: 108%;
                 background: #dae4fe;
                 height: 1px;
-                width: 28px;
+                width: $base * 4;
                 position: absolute;
             }
 
@@ -38,7 +38,7 @@
                 font-weight: $fw-bold;
                 font-size: $fz-md;
                 color: #4074f8;
-                margin-bottom: 28px;
+                margin-bottom: $base * 4;
             }
     
             &-text {
@@ -66,7 +66,7 @@
     &::after {
         content: "";
         height: 1px;
-        width: 15px;
+        width: $base * 4;
         background: #dae4fe;
     }
     &::before {

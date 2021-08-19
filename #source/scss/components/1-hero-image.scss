@@ -8,7 +8,7 @@
     position: relative;
     .dots {
         position: absolute;
-        bottom: 28px;
+        bottom: $base * 7;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -41,7 +41,7 @@
             }
             img {
                 border-radius: 100%;
-                box-shadow: 0px 10px 50px rgba(201, 209, 231, 1);
+                box-shadow: 0px $base * 3 $base * 12 rgba(201, 209, 231, 1);
             }
             .play-button {
                 margin-top: $base * 5;

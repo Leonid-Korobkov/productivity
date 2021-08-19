@@ -23,13 +23,13 @@
         }
         &-content {
             display: none;
-            padding: 0 $base * 4 53px $base * 32;
+            padding: 0 $base*4 $base*13 $base*32;
 
             &-text {
                 flex-grow: 1;
                 line-height: 27px;
                 letter-spacing: 0.03em;
-                max-width: 400px;
+                max-width: $base*100;
                 margin-right: auto;
             }
             &-btn {

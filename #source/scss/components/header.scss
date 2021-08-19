@@ -1,5 +1,3 @@
-.section-outer {
-}
 .section-header {
     .section-inner {
         padding: $padding-vertical-xs 0px $padding-vertical-xs;
@@ -11,13 +9,13 @@
 }
 .logo-link {
     display: inline-block;
-    border-radius: 100px;
+    border-radius: 100%;
 }
 .logo {
     background: $color-secondary;
     width: $base * 6;
     height: $base * 6;
-    border-radius: 100px;
+    border-radius: 100%;
 }
 .nav {
     margin-left: $base * 18;
@@ -30,6 +28,7 @@
             margin-left: $base * 7.5;
         }
         &-link {
+            position: relative;
             @include quicksand;
             font-size: $fz-sm;
             font-weight: $fw-medium;
@@ -37,6 +36,16 @@
             color: $color-primary;
             transition: $transiton;
             padding: 10px;
+            &::before {
+                content: '';
+                bottom: -3px;
+                left: 0;
+                position: absolute;
+                width: 0%;
+                height: 2px;
+                background-color: $color-secondary;
+                transition: $transiton;
+            }
 
             &--active {
                 font-weight: $fw-bold;
@@ -45,6 +54,9 @@
 
             &:hover {
                 color: $color-secondary;
+            }
+            &:hover:before {
+                width: 100%;
             }
         }
     }
@@ -62,13 +74,9 @@
             & + & {
                 margin-left: $base * 7.5;
             }
-
             &-link {
-                padding: 10px;
+                padding: $base*2.5;
                 transition: $transiton;
-                
-                &--active {
-                }
                 path {
                     transition: $transiton;
                 }
@@ -81,7 +89,6 @@
                 }
             }
 		}
-
 }
 
 

@@ -1,5 +1,5 @@
 .section-get-started {
-    background: #718ffb url(../img/get-started/clouds.svg) center center no-repeat;
+    background: #456dfd url(../img/get-started/clouds.svg) center center no-repeat;
     text-align: center;
     color: #fff;
 
@@ -11,10 +11,10 @@
         }
     }
     .text {
-        margin: 0 auto 50px;
+        margin: 0 auto $base*12;
         line-height: 29px;
         letter-spacing: 0.03em;
-        max-width: 712px;
+        max-width: $base*178;
     }
         .btn {
             margin-left: 0;

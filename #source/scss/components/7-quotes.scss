@@ -17,18 +17,18 @@
     }
 
     &__left {
-        padding-bottom: 30px;
+        padding-bottom: $base*8;
         h5 {
-            margin-bottom: 30px;
+            margin-bottom: $base*8;
         }
         h3 {
-            margin-bottom: 20px;
+            margin-bottom: $base*5;
             font-weight: $fw-medium;
         }
         .text {
             line-height: 23px;
             letter-spacing: 0.03em;
-            max-width: 324px;
+            max-width: $base*81;
         }
     }
 
@@ -43,14 +43,14 @@
     }
 }
 .slider-quotes {
-    margin-bottom: 80px;
+    margin-bottom: $base*20;
 
     &__item {
         position: relative;
-        padding: 40px 70px 52px;
+        padding: $base*10 $base*15 $base*13;
         border: 1px solid #d8e3fe;
         background: #fff;
-        box-shadow: 0px 5px 50px #dde3f3; 
+        box-shadow: 0px $base $base*12 #dde3f3; 
 
         &-text {
             font-size: $fz-md;
@@ -77,5 +77,3 @@
     }
 }
 
-.text {
-}

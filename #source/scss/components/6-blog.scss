@@ -7,11 +7,11 @@
 .slider-blog {
     border: 1px solid #d8e3fe;
     background: #fff;
-    margin-bottom: 50px;
-    box-shadow: 0px 15px 50px #eff4ff;
+    margin-bottom: $base * 12;
+    box-shadow: 0px $base*4 $base*12 #eff4ff;
 
 		&__item {
-            padding: 64px 35px;
+            padding: $base*16 $base*9;
             display: flex;
 
             &-gallery,
@@ -22,35 +22,35 @@
                     justify-content: flex-start;
 
                     .btn--no-bg {
-                        margin-left: 10px;
+                        margin-left: $base * 2;
                         border: none;
                     }
                 }
             }
             &-gallery {
                 display: grid;
-                grid-template-columns: repeat(2, 120px);
-                grid-template-rows: repeat(2, 120px);
-                grid-gap: 12px;
+                grid-template-columns: repeat(2, $base * 30);
+                grid-template-rows: repeat(2, $base * 30);
+                grid-gap: $base * 3;
 
                 
                 .image-link {
                     position: relative;
                     display: block;
-                    border-radius: 5px;
+                    border-radius: $base;
                     overflow: hidden;
-                    box-shadow: 0px 15px 30px #E5EBF8;
+                    box-shadow: 0px $base*4 $base*8 #E5EBF8;
 
                     .loupe {
                         opacity: 0;
                         position: absolute;
                         top: 50%;
                         left: 50%;
-                        transform: translate(200px);
+                        transform: translate($base * 50);
                         background: #fff url(../img/blog/loupe.svg) center center no-repeat;
                         display: block;
-                        width: 64px;
-                        height: 64px;
+                        width: $base * 16;
+                        height: $base * 16;
                         border-radius: 100%;
                         transition: $transiton;
                     }
@@ -62,6 +62,7 @@
                     }
                     
                     img {
+                        object-fit: cover;
                         width: 100%;
                         height: 100%;
                     }
@@ -102,24 +103,24 @@
                 margin-left: 6%;
 
                 .title {
-                    margin-bottom: 36px;
+                    margin-bottom: $base*9;
                 }
                 .text {
                     line-height: 27px;
                     letter-spacing: 0.03em;
-                    margin-bottom: 32px;
+                    margin-bottom: $base*8;
                 }
             }
 		}
 }
 .btn-blog {
     display: block;
-    width: 40px;
-    height: 20px;
+    width: $base*10;
+    height: $base*5;
     background: url(../img/blog/btn-blog-arrow.svg) center center no-repeat;
     position: absolute;
     top: 50%;
-    padding: 25px;
+    padding: $base*6;
     transform: translateY(-50%);
     transition: $transiton;
 
@@ -129,11 +130,11 @@
 
     &--prev {
         right: 100%;
-        margin-right: 75px;
+        margin-right: $base*19;
     }
     &--next{
         transform: rotate(180deg);
         left: 100%;
-        margin-left: 75px;
+        margin-left: $base*19;
     }
 }
