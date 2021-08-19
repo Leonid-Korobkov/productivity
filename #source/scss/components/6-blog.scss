@@ -3,6 +3,12 @@
 }
 .section-blog {
     background: #f5f8ff;
+
+    .section-subtitle {
+        font-size: 24px;
+        margin-bottom: $base * 20;
+        font-weight: $fw-medium;
+    }
 }
 .slider-blog {
     border: 1px solid #d8e3fe;
@@ -103,6 +109,7 @@
                 margin-left: 6%;
 
                 .title {
+                    font-size: 36px;
                     margin-bottom: $base*9;
                 }
                 .text {

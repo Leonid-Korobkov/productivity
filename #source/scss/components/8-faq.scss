@@ -1,3 +1,10 @@
+.section-faq {
+    .section-subtitle {
+        font-size: 24px;
+        margin-bottom: $base * 20;
+        font-weight: $fw-medium;
+    }
+}
 .faq-accordion {
 
     &__item {

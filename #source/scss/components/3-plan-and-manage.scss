@@ -13,10 +13,11 @@
         padding: $base * 51 0;
     }
     &__content {
-        h5 {
+        h2 {
             margin-bottom: $base * 7;
         }
-        h3 {
+        .section-subtitle {
+            font-size: 36px;
             font-weight: $fw-light;
             margin-bottom: $base * 7;
 

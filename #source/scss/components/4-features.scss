@@ -1,6 +1,8 @@
 .section-features {
     background: url(../img/features/bg-clouds.svg) center center / contain no-repeat;
-    h4 {
+    .section-subtitle {
+        font-size: 24px;
+        margin-bottom: $base * 20;
         font-weight: $fw-medium;
     }
 }
@@ -19,7 +21,7 @@
                 right: 108%;
                 background: #dae4fe;
                 height: 1px;
-                width: $base * 4;
+                width: $base * 7;
                 position: absolute;
             }
 
@@ -35,10 +37,11 @@
             }
 
             &-title {
+                @include roboto;
                 font-weight: $fw-bold;
                 font-size: $fz-md;
                 color: #4074f8;
-                margin-bottom: $base * 4;
+                margin-bottom: $base * 7;
             }
     
             &-text {

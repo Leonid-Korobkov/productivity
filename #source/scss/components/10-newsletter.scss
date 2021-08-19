@@ -12,6 +12,8 @@
             font-size: $fz-lg;
             color: #3d4f9f;
             margin-bottom: $base*4.5;
+            text-transform: none;
+            letter-spacing: 0;
         }
         &-text{
             line-height: 27px;

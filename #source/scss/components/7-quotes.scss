@@ -18,10 +18,11 @@
 
     &__left {
         padding-bottom: $base*8;
-        h5 {
+        h2 {
             margin-bottom: $base*8;
         }
-        h3 {
+        .section-subtitle {
+            font-size: 36px;
             margin-bottom: $base*5;
             font-weight: $fw-medium;
         }

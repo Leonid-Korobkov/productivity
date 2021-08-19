@@ -206,27 +206,44 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: $fw-regular;
 	color: #3d4f9f;
 }
-h1, h2 {
-	font-size: 48px;
-	margin-bottom: $base * 7;
-}
-h3 {
-	font-size: 36px;
-}
-h4 {
-	font-size: 24px;
-	margin-bottom: $base * 20;
-	font-weight: $fw-medium;
-}
-h5 {
+// h1, 
+h2 {
+	// font-size: 48px;
+	// margin-bottom: $base * 7;
+
 	@include roboto;
 	font-size: 10px;
 	margin-bottom: $base * 4;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
 }
+// h3 {
+// 	font-size: 36px;
+// }
+// h4 {
+// 	font-size: 24px;
+// 	margin-bottom: $base * 20;
+// 	font-weight: $fw-medium;
+// }
+// h5 {
+// }
+
+.section-subtitle {
+	@include quicksand;
+	font-size: 48px;
+	margin-bottom: $base * 7;
+	font-weight: $fw-regular;
+	color: #3d4f9f;
+}
 .ta-c {
 	text-align: center;
 }
-
-
+.visually-hidden {
+	position: absolute;width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	border: 0;
+	clip: rect(0 0 0 0);
+}

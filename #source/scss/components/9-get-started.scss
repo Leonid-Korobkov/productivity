@@ -3,8 +3,8 @@
     text-align: center;
     color: #fff;
 
-    h2,h5{color: #fff;}
-    h2 {
+    h2,.section-subtitle{color: #fff;}
+    .section-subtitle {
         font-weight: $fw-light;
         span {
             font-weight: $fw-medium;
