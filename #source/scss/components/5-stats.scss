@@ -1,4 +1,5 @@
 .section-stats {
+    padding: 0;
     background: #e9efff;
     display: flex;
     @include quicksand;
@@ -31,7 +32,7 @@
     }
     &__text {
         letter-spacing: 0.03em;
-        font-size: $fz-lg;
+        font-size: $fz-m;
         max-width: $base * 68;
         line-height: 24px;
         font-weight: $fw-medium;

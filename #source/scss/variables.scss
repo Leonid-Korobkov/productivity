@@ -5,10 +5,17 @@ $fw-regular: 400;
 $fw-medium: 500;
 $fw-bold: 700;
 
-$fz-sm: 12px;
-$fz-md: 15px;
-$fz-lg: 18px;
-$fz-xl: 48px;
+// $fz-sm: 12px;
+// $fz-md: 15px;
+// $fz-lg: 18px;
+// $fz-xl: 48px;
+
+$fz-xs: 12px;
+$fz-s: 15px;
+$fz-m: 18px;
+$fz-l: 24px;
+$fz-xl: 36px;
+$fz-xxl: 48px;
 
 $padding-vertical: $base * 30;
 $padding-vertical-sm: $base * 15;
@@ -19,3 +26,16 @@ $transiton: all 0.2s ease;
 
 $color-primary: #697ca6;
 $color-secondary: #6188ff;
+
+// $breakepoint-xs-min: 0;
+$breakepoint-sm-min: 576px;
+$breakepoint-md-min: 768px;
+$breakepoint-lg-min: 992px;
+$breakepoint-xl-min: 1200px;
+$breakepoint-xxl-min: 1400px;
+
+$breakepoint-sm-max: $breakepoint-sm-min - 1px;
+$breakepoint-md-max: $breakepoint-md-min - 1px;
+$breakepoint-lg-max: $breakepoint-lg-min - 1px;
+$breakepoint-xl-max: $breakepoint-xl-min - 1px;
+$breakepoint-xxl-max: $breakepoint-xxl-min - 1px;

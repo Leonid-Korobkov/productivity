@@ -1,6 +1,6 @@
 .section-faq {
     .section-subtitle {
-        font-size: 24px;
+        font-size: $fz-l;
         margin-bottom: $base * 20;
         font-weight: $fw-medium;
     }
@@ -25,7 +25,7 @@
             }
             &-text {
                 letter-spacing: 0.03em;
-                font-size: 15px;
+                font-size: $fz-s;
             }
         }
         &-content {

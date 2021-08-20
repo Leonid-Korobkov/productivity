@@ -5,7 +5,7 @@
     background: #f5f8ff;
 
     .section-subtitle {
-        font-size: 24px;
+        font-size: $fz-l;
         margin-bottom: $base * 20;
         font-weight: $fw-medium;
     }
@@ -19,6 +19,7 @@
 		&__item {
             padding: $base*16 $base*9;
             display: flex;
+            justify-content: space-between;
 
             &-gallery,
             &-content {
@@ -106,10 +107,9 @@
                 }
             }
             &-content {
-                margin-left: 6%;
 
                 .title {
-                    font-size: 36px;
+                    font-size: $fz-xl;
                     margin-bottom: $base*9;
                 }
                 .text {

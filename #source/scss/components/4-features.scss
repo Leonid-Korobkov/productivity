@@ -1,7 +1,7 @@
 .section-features {
     background: url(../img/features/bg-clouds.svg) center center / contain no-repeat;
     .section-subtitle {
-        font-size: 24px;
+        font-size: $fz-l;
         margin-bottom: $base * 20;
         font-weight: $fw-medium;
     }
@@ -39,7 +39,7 @@
             &-title {
                 @include roboto;
                 font-weight: $fw-bold;
-                font-size: $fz-md;
+                font-size: $fz-s;
                 color: #4074f8;
                 margin-bottom: $base * 7;
             }
@@ -61,7 +61,7 @@
 .or-block {
     display: inline-flex;
     align-items: center;
-    font-size: $fz-sm;
+    font-size: $fz-xs;
     font-weight: $fw-medium;
     margin: 0 $base * 4;
 

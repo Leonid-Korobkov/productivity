@@ -22,7 +22,7 @@
             margin-bottom: $base*8;
         }
         .section-subtitle {
-            font-size: 36px;
+            font-size: $fz-xl;
             margin-bottom: $base*5;
             font-weight: $fw-medium;
         }
@@ -54,7 +54,7 @@
         box-shadow: 0px $base $base*12 #dde3f3; 
 
         &-text {
-            font-size: $fz-md;
+            font-size: $fz-s;
             line-height: 24px;
             letter-spacing: 0.03em;
             color: #676F95;
