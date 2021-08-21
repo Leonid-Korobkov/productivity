@@ -2,6 +2,10 @@
     .section-inner {
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: $breakepoint-lg-max) {
+            flex-direction: column;
+            }
     }
     background: #fcfdff;
     &-left {
@@ -30,6 +34,22 @@
             box-shadow: 0px $base $base*4 rgba(116, 104, 255, 0.4);
             border-radius: 5px;
             margin-left: $base*3.5;
+        }
+        @media (max-width: $breakepoint-lg-max) {
+            justify-content: flex-start;
+            margin-top: 30px;
+        }
+        @media (max-width: $breakepoint-sm-max) {
+            form {
+                width: 100%;
+            }
+            input {
+                width: 100%;
+            }
+            .btn {
+                margin: 15px 0;
+                width: 100%;
+            }
         }
     }
 }

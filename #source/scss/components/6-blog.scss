@@ -8,6 +8,9 @@
         font-size: $fz-l;
         margin-bottom: $base * 20;
         font-weight: $fw-medium;
+        @media (max-width: $breakepoint-lg-max) {
+            margin-bottom: $base * 10;
+            }
     }
 }
 .slider-blog {
@@ -27,10 +30,16 @@
 
                 .btns {
                     justify-content: flex-start;
-
                     .btn--no-bg {
                         margin-left: $base * 2;
                         border: none;
+                    }
+                    @media (max-width: $breakepoint-sm-max) {
+                        display: flex;
+                        flex-direction: column;
+                        .btn--no-bg {
+                            margin-left: 0;
+                        }
                     }
                 }
             }
@@ -40,7 +49,23 @@
                 grid-template-rows: repeat(2, $base * 30);
                 grid-gap: $base * 3;
 
-                
+                @media (max-width: $breakepoint-lg-max) {
+                    grid-template-columns: repeat(2, $base * 20);
+                    grid-template-rows: repeat(2, $base * 20);
+                    grid-gap: $base * 4;
+                    }
+                @media (max-width: $breakepoint-md-max) {
+                        grid-template-columns: repeat(2, $base * 30);
+                        grid-template-rows: repeat(2, $base * 30);
+                        grid-gap: $base * 3;
+                        margin-bottom: $base*10;
+                    }
+                @media (max-width: $breakepoint-sm-max) {
+                        grid-template-columns: repeat(2, $base * 15);
+                        grid-template-rows: repeat(2, $base * 20);
+                        grid-gap: $base * 3;
+                        margin-bottom: $base*10;
+                }
                 .image-link {
                     position: relative;
                     display: block;
@@ -118,6 +143,10 @@
                     margin-bottom: $base*8;
                 }
             }
+            @media (max-width: $breakepoint-md-max) {
+                justify-content: center;
+                flex-direction: column;
+            }
 		}
 }
 .btn-blog {
@@ -143,5 +172,18 @@
         transform: rotate(180deg);
         left: 100%;
         margin-left: $base*19;
+    }
+    @media (max-width: $breakepoint-xl-max) {
+        width: $base*6;
+        height: $base*3;
+        &--prev {
+            margin-right: 0;
+        }
+        &--next{
+            margin-left: 0;
+        }
+    }
+    @media (max-width: $breakepoint-lg-max) {
+        display: none;
     }
 }

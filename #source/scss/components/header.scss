@@ -1,11 +1,86 @@
 .section-header {
+    position: relative;
     .section-inner {
         padding: $padding-vertical-xs 0px $padding-vertical-xs;
+
+        @media (max-width: $breakepoint-lg-max) {
+            padding: $base*2 0px $base*2;
+        }
     }
 }
 .main-navigation {
     display: flex;
     align-items: center;
+    &__inner-wrap {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        margin-left: $base * 18;
+
+        .section-header & {
+            @media (max-width: $breakepoint-lg-max) {
+                display: none;
+                position: absolute;
+                padding: $base * 5;
+                z-index: 10;
+                top: 100%;
+                right: 0;
+                left: 0;
+                margin-left: 0;
+                background: #fff;
+
+                .nav-wrapper {
+                    flex-direction: column;
+                    text-align: center;
+
+                    &__item {
+                        margin-left: 0;
+                        margin-bottom: 50px;
+
+                        &-link {
+                            font-size: $fz-xl;
+                        }
+                    }
+                }
+                svg {
+                    transform: scale(1.7);
+                }
+            }
+        }
+        @media (max-width: $breakepoint-lg-max) {
+            flex-direction: column;
+
+            .socials,
+            .nav {
+                margin-top: $base * 7;
+            }
+
+            &,
+            .socials,
+            .btn--primary {
+                margin-left: 0;
+            }
+            .btn--primary {
+                margin-top: $base * 7;
+            }
+        }
+    }
+    .section-footer & {
+        @media (max-width: $breakepoint-lg-max) {
+            flex-direction: column;
+        }
+        @media (max-width: $breakepoint-sm-max) {
+            .nav-wrapper {
+                flex-direction: column;
+                text-align: center;
+
+                &__item {
+                    margin-left: 0;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
 }
 .logo-link {
     display: inline-block;
@@ -14,16 +89,17 @@
     width: $base * 6;
     height: $base * 6;
     border-radius: 100%;
-}
-.nav {
-    margin-left: $base * 18;
-}
-.nav-wrapper {
+}.nav-wrapper {
     display: flex;
 
     &__item {
+        flex-wrap: wrap;
         & + & {
             margin-left: $base * 7.5;
+
+            @media (max-width: $breakepoint-xl-max) {
+                margin-left: $base * 5;
+            }
         }
         &-link {
             position: relative;

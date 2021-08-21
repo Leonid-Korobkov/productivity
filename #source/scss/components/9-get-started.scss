@@ -2,6 +2,9 @@
     background: #456dfd url(../img/get-started/clouds.svg) center center no-repeat;
     text-align: center;
     color: #fff;
+    @media (max-width: $breakepoint-xl-max) {
+        background-size: contain;
+    }
 
     h2,.section-subtitle{color: #fff;}
     .section-subtitle {

@@ -8,12 +8,15 @@
     .section-inner {
         display: flex;
         justify-content: space-between;
+        @media (max-width: $breakepoint-md-max) {
+            flex-direction: column;
+            }
     }
 
     &__left,
     &__right {
         flex-basis: 47%;
-        margin: auto 0;
+        margin: auto 0; 
     }
 
     &__left {
@@ -30,12 +33,22 @@
             line-height: 23px;
             letter-spacing: 0.03em;
             max-width: $base*81;
+            @media (max-width: $breakepoint-md-max) {
+                max-width: none;
+                }
         }
+        @media (max-width: $breakepoint-md-max) {
+            text-align: center;
+            }
     }
 
     &__right {
         flex-basis: 50%;
         margin-left: 4%;
+        @media (max-width: $breakepoint-md-max) {
+            margin-left: 0;
+            text-align: center;
+            }
 
         .dots__item {
             width: $base * 2;
@@ -74,6 +87,9 @@
                 width: 100%;
                 height: 100%;
             }
+        }
+        @media (max-width: $breakepoint-md-max) {
+            padding: $base*5 $base*7 $base*13;
         }
     }
 }

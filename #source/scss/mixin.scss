@@ -5,6 +5,13 @@
     font-family: 'Quicksand', sans-serif;
 }
 
+
+// @function strip-unit($num) {
+//     @return $num / ($num * 0 + 1);
+// }
+// @function rem($num) {
+//     @return (strip-unit($num) / 16) * 1rem;
+// }
 // $maxWidth: 1280;
 // @mixin adaptiv-font($pcSize, $mobSize) {
 // 	$addSize: $pcSize - $mobSize;

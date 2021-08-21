@@ -3,6 +3,9 @@
         font-size: $fz-l;
         margin-bottom: $base * 20;
         font-weight: $fw-medium;
+        @media (max-width: $breakepoint-lg-max) {
+            margin-bottom: $base * 6;
+            }
     }
 }
 .faq-accordion {
@@ -12,7 +15,7 @@
 
         &-trigger {
             display: flex;
-            padding: $base * 7;
+            padding: $base*7 $base*7 $base*7 0;
 
             &-icon {
                 cursor: pointer;
@@ -41,6 +44,16 @@
             }
             &-btn {
                 margin: auto 0;
+            }
+            @media (max-width: $breakepoint-md-max) {
+                flex-direction: column;
+                padding: 0 $base*4 $base*13 $base*16;
+                &-btn {
+                    margin-top: 25px;
+                }
+                &-text {
+                    max-width: none;
+                }
             }
         }
         &--active {

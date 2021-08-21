@@ -22,7 +22,6 @@
         background-position: 50% 50%;
         text-align: center;
         background: url(../img/hero-image/1-slider-bg.png) center bottom / cover no-repeat;
-
         &-content {
             .section-subtitle {
                 font-weight: $fw-light;
@@ -46,6 +45,19 @@
             }
             .play-button {
                 margin-top: $base * 5;
+            }
+        }
+        @media (max-width: $breakepoint-xl-max) {
+            background-size: contain;
+            height: calc(100vh - 60px);
+        }
+        @media (max-width: 1024px) {
+            height: 700px;
+        }
+        @media (max-width: $breakepoint-sm-max) {
+            height: 500px;
+            .text {
+                width: 100%;
             }
         }
     }

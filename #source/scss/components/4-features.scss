@@ -4,17 +4,32 @@
         font-size: $fz-l;
         margin-bottom: $base * 20;
         font-weight: $fw-medium;
+        @media (max-width: $breakepoint-lg-max) {
+            margin-bottom: $base * 10;
+            }
     }
 }
 .features-list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     text-align: center;
     margin-bottom: $base * 26;
-
+    @media (max-width: $breakepoint-md-max) {
+        margin-bottom: $base * 13;
+        justify-content: center;
+        }
 		&__item {
             flex-basis: 20%;
             position: relative;
+            @media (max-width: $breakepoint-md-max) {
+                flex-basis: 40%;
+                margin: 20px;
+                }
+            @media (max-width: $breakepoint-sm-max) {
+                    flex-basis: 100%;
+                    margin: 20px;
+                    }
             &:not(:first-child):before {
                 content: "";
                 top: 55%;
@@ -23,6 +38,9 @@
                 height: 1px;
                 width: $base * 7;
                 position: absolute;
+                @media (max-width: $breakepoint-md-max) {
+                    display: none;
+                }
             }
 
             &-icon {
@@ -34,6 +52,11 @@
                 height: $base * 17;
                 border-radius: 100%;
                 background: #f1f5ff;
+                @media (max-width: $breakepoint-md-max) {
+                    margin-bottom: $base * 5;
+                    width: $base * 13;
+                    height: $base * 13;
+                }
             }
 
             &-title {
@@ -42,6 +65,9 @@
                 font-size: $fz-s;
                 color: #4074f8;
                 margin-bottom: $base * 7;
+                @media (max-width: $breakepoint-md-max) {
+                    margin-bottom: $base * 4;
+                }
             }
     
             &-text {
@@ -56,6 +82,10 @@
     .btn {
         margin-left: 0;
         display: inline-block;
+    }
+
+    @media (max-width: $breakepoint-sm-max) {
+        flex-direction: column;
     }
 }
 .or-block {
@@ -77,5 +107,8 @@
     }
     &::after {
         margin-left: $base * 4;
+    }
+    @media (max-width: $breakepoint-sm-max) {
+        margin: 15px auto;
     }
 }

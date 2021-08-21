@@ -3,11 +3,17 @@
     background: #e9efff;
     display: flex;
     @include quicksand;
+    @media (max-width: $breakepoint-sm-max) {
+        flex-direction: column;
+        }
 
     &__left,
     &__right{
         flex-basis: 50%;
         padding: $base*16.5 $base*22.5;
+        @media (max-width: $breakepoint-lg-max) {
+            padding: $base*8 $base*11;
+            }
     }
     &__left {
         background: #6888ff;
