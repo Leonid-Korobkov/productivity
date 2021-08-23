@@ -7,12 +7,17 @@
     // background: #f4f7ff; 
     padding: 0;
     position: relative;
+    height: calc(100vh - 80px);
+    overflow: hidden;
     .dots {
-        position: absolute;
-        bottom: $base * 7;
-        left: 50%;
-        transform: translateX(-50%);
+        margin-bottom: 15px;
     }
+    @media (max-width: $breakepoint-lg-max) {
+            height: calc(100vh - 40px);
+        }
+        @media (max-width: $breakepoint-sm-max) {
+            height: 500px;
+        }
 }
 .slider-hero-image {
     &__item {
@@ -21,6 +26,7 @@
         background-size: cover;
         background-position: 50% 50%;
         text-align: center;
+        padding: 0 $base * 5;
         background: url(../img/hero-image/1-slider-bg.png) center bottom / cover no-repeat;
         &-content {
             .section-subtitle {

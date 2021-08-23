@@ -1,5 +1,8 @@
 .slider-wrapper {
     position: relative;
+    box-shadow: 0px $base*4 $base*12 #d7e0f3;
+    margin-bottom: $base * 12;
+    border: 1px solid #d8e3fe;
 }
 .section-blog {
     background: #f5f8ff;
@@ -14,12 +17,9 @@
     }
 }
 .slider-blog {
-    border: 1px solid #d8e3fe;
-    background: #fff;
-    margin-bottom: $base * 12;
-    box-shadow: 0px $base*4 $base*12 #eff4ff;
-
 		&__item {
+            background: #fff;
+            // margin-bottom: $base * 12;
             padding: $base*16 $base*9;
             display: flex;
             justify-content: space-between;
@@ -149,41 +149,41 @@
             }
 		}
 }
-.btn-blog {
-    display: block;
-    width: $base*10;
-    height: $base*5;
-    background: url(../img/blog/btn-blog-arrow.svg) center center no-repeat;
-    position: absolute;
-    top: 50%;
-    padding: $base*6;
-    transform: translateY(-50%);
-    transition: $transiton;
+// .btn-blog {
+//     display: block;
+//     width: $base*10;
+//     height: $base*5;
+//     background: url(../img/blog/btn-blog-arrow.svg) center center no-repeat;
+//     position: absolute;
+//     top: 50%;
+//     padding: $base*6;
+//     transform: translateY(-50%);
+//     transition: $transiton;
 
-    &:hover {
-        filter: invert(100%);
-    }
+//     &:hover {
+//         filter: invert(100%);
+//     }
 
-    &--prev {
-        right: 100%;
-        margin-right: $base*19;
-    }
-    &--next{
-        transform: rotate(180deg);
-        left: 100%;
-        margin-left: $base*19;
-    }
-    @media (max-width: $breakepoint-xl-max) {
-        width: $base*6;
-        height: $base*3;
-        &--prev {
-            margin-right: 0;
-        }
-        &--next{
-            margin-left: 0;
-        }
-    }
-    @media (max-width: $breakepoint-lg-max) {
-        display: none;
-    }
-}
+//     &--prev {
+//         right: 100%;
+//         margin-right: $base*19;
+//     }
+//     &--next{
+//         transform: rotate(180deg);
+//         left: 100%;
+//         margin-left: $base*19;
+//     }
+//     @media (max-width: $breakepoint-xl-max) {
+//         width: $base*6;
+//         height: $base*3;
+//         &--prev {
+//             margin-right: 0;
+//         }
+//         &--next{
+//             margin-left: 0;
+//         }
+//     }
+//     @media (max-width: $breakepoint-lg-max) {
+//         display: none;
+//     }
+// }

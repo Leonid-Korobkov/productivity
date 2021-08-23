@@ -30,9 +30,15 @@ body{
 	@include roboto;
 	color: #8d96bd;
 	font-size: 14px;
+	padding-top: $base * 20;
+	@media (max-width: $breakepoint-lg-max) {
+		padding-top: $base * 15;
+	}
 }
+
 .dots {
-	margin: 0;
+	z-index: 9;
+	margin: 0 auto;
 	padding: 0;
 	list-style: none;
 	display: flex;
@@ -50,6 +56,23 @@ body{
 			background: #5283ff;
 		}
 		& + & {
+			margin-left: $base * 3;
+		}
+	}
+
+	.swiper-pagination-bullet  {
+		width: $base * 3;
+		height: $base * 3;
+		border-radius: 100%;
+		background: #7e818a;
+		transition: $transiton;
+		cursor: pointer;
+		display: flex;justify-content: center;
+
+		&-active {
+			background: #5283ff;
+		}
+		&:not(:first-child) {
 			margin-left: $base * 3;
 		}
 	}

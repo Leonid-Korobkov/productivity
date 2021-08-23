@@ -12,10 +12,13 @@
 
     &__item {
         border-bottom: 1px solid #D8E3FE;
+        cursor: pointer;
+        
 
         &-trigger {
             display: flex;
-            padding: $base*7 $base*7 $base*7 0;
+            padding: $base*6 $base*6 $base*6 0;
+            margin: $base*3 0;
 
             &-icon {
                 cursor: pointer;

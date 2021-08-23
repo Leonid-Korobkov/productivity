@@ -1,5 +1,22 @@
 .section-header {
-    position: relative;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    background: #fff;
+
+    &::before {
+        display: none;
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100vw;
+        height: 100vh;
+        background: rgba($color: #000000, $alpha: 0.7);
+        backdrop-filter: blur(8px);
+    }
     .section-inner {
         padding: $padding-vertical-xs 0px $padding-vertical-xs;
 
@@ -35,10 +52,10 @@
 
                     &__item {
                         margin-left: 0;
-                        margin-bottom: 50px;
+                        margin-bottom: 30px;
 
                         &-link {
-                            font-size: $fz-xl;
+                            font-size: $fz-l;
                         }
                     }
                 }
@@ -80,6 +97,14 @@
                 }
             }
         }
+    }
+}
+.section-header--active-nav {
+    &::before {
+        display: block;
+    }
+    .main-navigation__inner-wrap {
+        display: flex;
     }
 }
 .logo-link {

@@ -15,7 +15,7 @@
 
     &__left,
     &__right {
-        flex-basis: 47%;
+        min-width: 50%;
         margin: auto 0; 
     }
 
@@ -43,16 +43,14 @@
     }
 
     &__right {
-        flex-basis: 50%;
-        margin-left: 4%;
+        // margin-left: 4%;
         @media (max-width: $breakepoint-md-max) {
             margin-left: 0;
             text-align: center;
+            width: 100%;
             }
-
-        .dots__item {
-            width: $base * 2;
-            height: $base * 2;
+        .swiper-pagination {
+            position: relative;
         }
     }
 }
@@ -60,11 +58,11 @@
     margin-bottom: $base*20;
 
     &__item {
+        width: 100%;
         position: relative;
         padding: $base*10 $base*15 $base*13;
+        background: #fff; 
         border: 1px solid #d8e3fe;
-        background: #fff;
-        box-shadow: 0px $base $base*12 #dde3f3; 
 
         &-text {
             font-size: $fz-s;
